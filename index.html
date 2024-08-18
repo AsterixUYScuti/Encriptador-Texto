@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconect" href="https://googleapis.com">
+    <link rel="preconect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>html{filter: important}</style>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/Logo.png" alt="logo de alura">
+    </header>
+
+    <main>
+        <section class="contenido__input">
+            <div>
+                <label for="texto-entrada">Ingrese el texto que desee encriptar/desencriptar</label>
+                <textarea name="texto-entrada" id="texto-entrada"></textarea>
+            </div>
+
+            <div>
+                <img class="contenido__input__advertencia__img" src="assets/advertencia.svg" alt="Advertencia solo letras minusculas sin tilde">
+                <p class="contenido__input__advertencia__mensaje">Solo letras minusculas y sin tilde</p>
+            </div>
+
+            <div class="contenido__input__botones">
+                <button id="btn-encriptar" class="contenido__input__btn" aria-label="Encriptar">Encriptar</button>
+                <button id="btn-desencriptar" class="contenido__input__btn" aria-label="Desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenido__output">
+            <svg id="svg" class="contenido__output__img" width="336" height="304" viewBox="0 0 336 304" fill="none" src="./imagenes/Muñeco.png">
+                <g clip-path="url(#clip0_2_1323)"></g>
+                <defs>
+                    <clipPath id="clip0_2_1323">
+                        <rect width="336" height="304" fill="white"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+            <p class="contenido__output__mensaje" id="mensaje"> Ningún mensaje fue encontrado </p>
+            <p class="contenido__output__mensaje_2" id="texto-salida">Ingrese el texto que desee encriptar/desencriptar </p>
+            <button id="btn-copiar" class="contenido__output__btn" aria-label="Copiar" hidden>Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <ul class="redes-sociales">
+            <li>
+                <a href="https://x.com/aldoarellano_c" aria-label="Sígueme en X">
+                    <img src="./assets/X_icon.png" alt="X">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/aldo-arellano-claveria-25ab88178/" aria-label="Contáctame en LinkedIn">
+                    <img src="./assets/linkedin_icon.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@aldorock962" aria-label="Sígueme en YouTube">
+                    <img src="./assets/youtube logo.png" alt="YouTube">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/AsterixUYScuti" aria-label="Visita mi Github">
+                    <img src="./assets/github_icon.svg" alt="GitHub">
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">Diseño por AsterixUYScuti</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
